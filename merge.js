@@ -7,13 +7,13 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question("Entrez le nom du dossier à analyser : ", (directoryPath) => {
+rl.question("Entrez le chemin du dossier à analyser : ", (directoryPath) => {
   rl.question("Entrez le nom du fichier de sortie : ", (outputFileName) => {
     const outputPath = path.join(__dirname, outputFileName);
 
     const ignoredFiles = [
       __filename, // Le programme lui-même
-      "output.txt", // Le fichier de sortie
+      outputFileName, // Le fichier de sortie
       ".gitignore",
       "pnpm-lock.yaml",
       "package-lock.json",

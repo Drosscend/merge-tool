@@ -7,7 +7,7 @@ Ce programme est un outil de ligne de commande en Node.js qui permet d'analyser 
 1. Assurez-vous que Node.js est installé sur votre machine.
 2. Ouvrez votre terminal et naviguez jusqu'au dossier contenant ce programme.
 3. Exécutez le programme avec la commande `node merge.js`.
-4. Le programme vous demandera d'entrer le nom du dossier à analyser.
+4. Le programme vous demandera d'entrer le chemin du dossier à analyser.
 5. Ensuite, il vous demandera le nom du fichier de sortie où les détails seront écrits.
 6. Vous pouvez également spécifier des fichiers et des dossiers supplémentaires à ignorer lors de l'analyse.
 
