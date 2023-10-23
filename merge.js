@@ -97,6 +97,9 @@ rl.question("Entrez le chemin du dossier à analyser : ", (directoryPath) => {
                   if (answer.toLowerCase() === "oui" || answer.toLowerCase() === "o" || answer.toLowerCase() === "yes" || answer.toLowerCase() === "y") {
                     fs.unlinkSync(outputPath);
                     processDirectory(directoryPath);
+                    console.log(
+                      `La sortie a été écrite dans le fichier : ${outputPath}`
+                    );
                   } else {
                     console.log("L'opération a été annulée.");
                   }
